@@ -133,7 +133,7 @@ hospital_tools = [
 class AgentHospitalApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("🧠 ReAct Logic Layer Engine v2")
+        self.root.title("🧠 Logic Engine v2")
         self.root.geometry("900x650")
         
         self.left_frame = ttk.LabelFrame(root, text=" Live Database State (RAM) ", padding=10)
@@ -164,7 +164,7 @@ class AgentHospitalApp:
         self.submit_btn.pack(side=tk.RIGHT)
         
         self.refresh_database_view()
-        self.append_to_chat("SYSTEM", "ReAct Engine v2 Online. Multi-variable modifications enabled.")
+        self.append_to_chat("SYSTEM", "Local Agent Online. Multi-variable modifications enabled.")
 
     def refresh_database_view(self):
         for item in self.tree.get_children():
